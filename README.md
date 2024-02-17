@@ -2,12 +2,7 @@
 ## Step1-Checking Django version
 check whether django is installed in your system by using below command:
 
-```py -m django --version```  or
-
-if django version is not showing then use below command to install django:
-
-```py -m pip install Django```
-
+```py -m django --version```
 
 ## Step2-creating project
 by using cd command change the destination folder at where project has to be stored then use the below command to create "HelloWorld" Application.
@@ -30,6 +25,7 @@ use below command to run the server
 ```py manage.py runserver```
 
 After running you observe output in cmd as follows:
+
 ```
 Watching for file changes with StatReloader
 Performing system checks...
@@ -42,15 +38,15 @@ February 17, 2024 - 00:02:01
 Django version 5.0.2, using settings 'HelloWorld.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
-'''
+```
 ## Step-4 creating pools app
 now change your directory into "HelloWorld" by using "cd" command and run the below command:
 
-''' py manage.py startapp polls '''
+``` py manage.py startapp polls ```
 
 After running above command you can observe a new "pools" folder is created, which contains the below files
 
-'''
+```
 polls/
     __init__.py
     admin.py
@@ -60,7 +56,7 @@ polls/
     models.py
     tests.py
     views.py
-'''
+```
 ## Step-5: Adding code
 
 Now we need to modify the views.py file code as follows:
