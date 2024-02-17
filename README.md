@@ -39,6 +39,8 @@ Django version 5.0.2, using settings 'HelloWorld.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
+Now  visit http://127.0.0.1:8000/ with your web browser. You’ll see a “Congratulations!” page, with a rocket taking off evident that it is working successfully
+
 ## Step-4 creating pools app
 now change your directory into "HelloWorld" by using "cd" command and run the below command:
 
