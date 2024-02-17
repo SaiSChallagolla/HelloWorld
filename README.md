@@ -88,6 +88,17 @@ urlpatterns = [
     path("admin/", admin.site.urls),
 ]
 ```
+## Step-7 Running Server
+Now run the server again by using command
+
+```py manage.py runserver```
+Now go to "http://localhost:8000/polls/ " website it shows the output as follows:
+
+```
+{"Message": "Hello World!"}
+
+```
+
 
 
 
