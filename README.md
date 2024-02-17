@@ -68,6 +68,17 @@ from django.http import JsonResponse
 def index(request):
     return JsonResponse({'Message': 'Hello World!'})
 ```
+Now create a "urls.py" python file and add the following code in it
+``` python
+from django.urls import path
+
+from . import views
+
+urlpatterns = [
+    path("", views.index, name="index"),
+]
+```
+
 
 
 
