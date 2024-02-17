@@ -1,32 +1,16 @@
-# Helloworld Application Instructions
+# Helloworld Application Instructions in windows
 ## Step1-Checking Django version
 check whether django is installed in your system by using below command:
 
-In windows
-
 ```py -m django --version```  or
 
-if you are using linux use command
-
-``` python -m django --version```
-
-if django version is not showing then use below commands to install django:
-In windows
+if django version is not showing then use below command to install django:
 
 ```py -m pip install Django```
 
-In Linux:
-
-```python -m pip install Django```
 
 ## Step2-creating project
 by using cd command change the destination folder at where project has to be stored then use the below command to create "HelloWorld" Application.
-
-Windows command:
-
-```django-admin startproject HelloWorld```
-
-Linux Command:
 
 ```django-admin startproject HelloWorld```
 
@@ -40,3 +24,58 @@ by running the above command you can observe a "HelloWorld" folder is created , 
         asgi.py
         wsgi.py
 ```
+## Step-3 Running Server 
+use below command to run the server
+
+```py manage.py runserver```
+
+After running you observe output in cmd as follows:
+```
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+February 17, 2024 - 00:02:01
+Django version 5.0.2, using settings 'HelloWorld.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+'''
+## Step-4 creating pools app
+now change your directory into "HelloWorld" by using "cd" command and run the below command:
+
+''' py manage.py startapp polls '''
+
+After running above command you can observe a new "pools" folder is created, which contains the below files
+
+'''
+polls/
+    __init__.py
+    admin.py
+    apps.py
+    migrations/
+        __init__.py
+    models.py
+    tests.py
+    views.py
+'''
+## Step-5: Adding code
+
+Now we need to modify the views.py file code as follows:
+``` python
+from django.shortcuts import render
+from django.http import JsonResponse
+
+# Create your views here.
+def index(request):
+    return JsonResponse({'Message': 'Hello World!'})
+```
+
+
+
+
+
+
+
