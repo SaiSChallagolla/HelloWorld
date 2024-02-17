@@ -78,7 +78,16 @@ urlpatterns = [
     path("", views.index, name="index"),
 ]
 ```
+Now modify HelloWorld/urls.py file as follows
+``` python
+from django.contrib import admin
+from django.urls import include, path
 
+urlpatterns = [
+    path("polls/", include("polls.urls")),
+    path("admin/", admin.site.urls),
+]
+```
 
 
 
