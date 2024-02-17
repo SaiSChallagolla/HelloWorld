@@ -31,11 +31,12 @@ Linux Command:
 ```django-admin startproject HelloWorld```
 
 by running the above command you can observe a "HelloWorld" folder is created , which contains below  files
-````HelloWorld/
+```
     manage.py
     HelloWorld/
         __init__.py
         settings.py
         urls.py
         asgi.py
-        wsgi.py```
+        wsgi.py
+```
