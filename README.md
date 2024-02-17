@@ -1,5 +1,5 @@
 # Helloworld Application Instructions
-## step1-Checking django version
+## Step1-Checking Django version
 check whether django is installed in your system by using below command:
 
 In windows
@@ -19,6 +19,23 @@ In Linux:
 
 ```python -m pip install Django```
 
-## step2-creating project
+## Step2-creating project
 by using cd command change the destination folder at where project has to be stored then use the below command to create "HelloWorld" Application.
+
 Windows command:
+
+```django-admin startproject HelloWorld```
+
+Linux Command:
+
+```django-admin startproject HelloWorld```
+
+by running the above command you can observe a "HelloWorld" folder is created , which contains below  files
+````HelloWorld/
+    manage.py
+    HelloWorld/
+        __init__.py
+        settings.py
+        urls.py
+        asgi.py
+        wsgi.py```
