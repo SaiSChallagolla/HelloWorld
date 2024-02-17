@@ -12,4 +12,4 @@ In Linux:
 ```python -m pip install Django```
 ## step2-creating project
 by using cd command change the destination folder at where project has to be stored then use the below command to create "HelloWorld" Application.
-\Windows command:
+\n Windows command:
