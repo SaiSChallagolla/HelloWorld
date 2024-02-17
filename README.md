@@ -1,10 +1,12 @@
 # Helloworld Application Instructions
 ## step1-Checking django version
 check whether django is installed in your system by using below command:
+
 In windows
 ```py -m django --version```  or
 if you are using linux use command
 ``` python -m django --version```
+
 if django version is not showing then use below commands to install django:
 In windows
 ```py -m pip install Django```
